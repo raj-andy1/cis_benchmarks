@@ -103,7 +103,7 @@ $osrelease = "${::cis_benchmarks::params::osfamily}${osreleasemajor}"
     #4.2.2
     $cis_syslog_ng_server = ''
     $cis_syslog_ng_entries = {
-    'options { chain_hostnames(off); flush_lines(0); perm(0640); stats_freq(3600);threaded(yes); };' => '/path/to/file',
+    'options { chain_hostnames(off); flush_lines(0); perm(0640); stats_freq(3600);threaded(yes); };' => '/etc/syslog-ng/syslog-ng.conf',
   }
     # 5.1.1
 
